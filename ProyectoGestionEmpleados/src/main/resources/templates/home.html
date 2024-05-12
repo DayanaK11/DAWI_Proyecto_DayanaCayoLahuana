@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="layout::head">
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <style>
+        .container {
+            text-align: center;
+        }
+        .welcome-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .employee-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+        .employee {
+            text-align: center;
+        }
+        .employee img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .employee p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<nav th:replace="layout::menu"></nav>
+<center>
+    <h1 class="welcome-title">¡Bienvenido!</h1>
+</center>
+
+<div class="container">
+
+    <div class="employee-row">
+        <img src="https://img.freepik.com/foto-gratis/retrato-hombre-joven-expresivo-vistiendo-traje-formal_273609-6942.jpg?size=626&ext=jpg&ga=GA1.1.946239694.1715212800&semt=ais_user" class="rounded float-start" alt="...">
+        <img src="https://img.freepik.com/foto-gratis/increible-mujer-negocios-alegre-pie-brazos-cruzados_171337-8487.jpg" class="rounded float-end" alt="...">
+
+
+    </div>
+</div>
+
+</body>
+</html>
